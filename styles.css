@@ -1,0 +1,121 @@
+li {
+    list-style: none;
+}
+*{
+    outline: 2px solid black;
+    margin: 0;
+}
+
+
+
+.container {
+    background-color: white;
+    width: 100%;   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.header {
+    background-color: blueviolet;
+    content: "";
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content {
+    background-color: brown;
+    width: 100%;
+    height: 50vh;
+    margin-top: 0;
+    border: none;
+    padding: 2rem;
+}
+.content h1,h2 {
+    text-align: center;
+}
+.sheds-output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sheds-output-child {
+    width: 200px;
+    height: 200px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    box-shadow: inset;
+    background-color: white;
+}
+
+
+
+
+
+.divtrial {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.header {
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reports {
+    background-color: aquamarine;
+    content: " ";
+    width: 100%;
+    height: 60vh;
+} 
