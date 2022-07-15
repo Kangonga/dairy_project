@@ -25,15 +25,18 @@ console.log(totalOutput+':'+ totalPrice);
 // ////////////////////////////////////////////////////////
 
 totalProduction = function(sheds, shedOutput) {
+    output = [];
     for(i=0; i<sheds.length; i++) {
-    console.log(`Your production in Shed ${sheds[i]} : ${Object.values(shedOutput)[i]} litres per day`)
+    output.push(`<li>Your production in Shed ${sheds[i]} : ${Object.values(shedOutput)[i]} litres per day</li>`)
     }
-    console.log(`The total production is ${totalOutput} litres per day`)
-    console.log(`The total income for the day is ${totalOutput*milkPrice}`)
+    output.push(`<li>The total output is ${totalOutput} litres for the week</li>`)
     dayOutput = totalOutput
+    return(output)
+    //console.log(`The total income for the day is ${totalOutput*milkPrice}`)
+    //return totalOutput
 }
 
- totalProduction(sheds, shedOutput);
+
 
 // //////////////////////////////////////////////////////
 
@@ -75,12 +78,19 @@ function incomeOverTime(sellingPrice, time, input = dayOutput){
         console.log ("Enter a valid timeframe")
     }
 }
-incomeOverTime(45, "monthly")
 
+
+
+//create a report variable that listens to the daily output button
 const report = document.querySelector('.report')
+
 report.addEventListener('click', ()=>{
-    const output = document.querySelector('.sheds-output-child')
-    output.innerText = "please"
+    let prod = totalProduction(sheds, shedOutput);
+    productionDiv = document.createElement('div');
+    document.querySelector('.content').appendChild(productionDiv);
+    productionDiv.setAttribute('class','sheds-output-child')
+    productionDiv.innerHTML = `${prod}`;
+    
 })
 
 
