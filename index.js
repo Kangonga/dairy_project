@@ -1,6 +1,7 @@
 let milkPrice = 45; // 45ksh
 const fullTIme = 52; // 52 weeks
 let dayOutput;
+let sellingPrice;
 
 sheds = ['A','B','C','D']
 months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -82,7 +83,7 @@ function incomeOverTime(sellingPrice, time, input = dayOutput){
 
 
 //create a report variable that listens to the daily output button
-const report = document.querySelector('.report')
+const report = document.querySelector('.contents')
 
 report.addEventListener('click', ()=>{
     let prod = totalProduction(sheds, shedOutput);
@@ -93,4 +94,18 @@ report.addEventListener('click', ()=>{
     
 })
 
+const button1 = document.querySelector('.buttonA');
+button1.addEventListener('click', () => {
+    prod = totalProduction(sheds, shedOutput);
+    let content1 = document.getElementById('button1');
+    content1.innerHTML = `${prod}`
+})
 
+const button2 = document.getElementById('buttonB');
+button2.addEventListener('click', () =>{
+    sellingPrice = prompt("Enter the selling price for a liter");
+    let weekly = sellingPrice * dayOutput * 7;
+    let content2 = document.getElementById('button2');
+    content2.innerHTML = `for the week: ${weekly}`
+
+})
