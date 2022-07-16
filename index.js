@@ -150,7 +150,10 @@ button3.addEventListener('click', () => {
 
 })
 
-function comparison(incomeOverTime, newIncome) {
-    income1 = incomeOverTime(price1)
-    income2 = incomeOverTime(price2)
-}
+const button4 = document.getElementById('button4')
+button4.addEventListener('click', ()=>{
+    price2 = incomeOverTime(sellingPrice)
+    price1 = newIncome()
+    let opt = getElementByClassName('opt')
+    opt.innerHTML = `price1: ${price1} :: price2: ${price2}`
+})
