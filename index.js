@@ -36,8 +36,6 @@ totalProduction = function(sheds, shedOutput) {
 
 
 
-// //////////////////////////////////////////////////////
-
 
 function incomeOverTime(sellingPrice, input = totalOutput){
     let price = sellingPrice;
