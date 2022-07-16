@@ -14,6 +14,7 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    background-color: rgb(149, 173, 165);
 }
 
 .navbar {
@@ -27,12 +28,12 @@ html {
 }
 
 .nav-item1 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .instructions {
-    margin: 2rem;
-    font-size: 2rem;
+    margin: 1rem;
+    font-size: 1.5rem;
     padding: 0 3rem;
 }
 
@@ -52,7 +53,6 @@ html {
     width: 30%;
     height: 90%;
     content: " ";
-    background-color: gray;
     color: black;
     display: flex;
     flex-wrap: wrap;
@@ -60,11 +60,14 @@ html {
     justify-content: space-around;
 }
 
-button {
+.button {
     height:15%;
     border: 2px solid blueviolet;
     border-radius: 8px;
     box-shadow: 2px 2px 0;
+    width: 100%;
+    font-style: monospace;
+    font-size: 1.1rem;
 
 }
 button:active {
@@ -81,15 +84,23 @@ button:hover {
 }
 
 .optional {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
     text-align: center;
-    height: 80vh;
+    height: 120vh;
+    background-color: aquamarine;
+    font-size: 1.3rem;
+    font-style: monospace;
 }
-.optionalChild{
-    width: 50%;
-    content: "";
-    background-color: rebeccapurple;
+#optContent {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+#button4 {
+    width: 40%;
+    border: 2px solid blueviolet;
+    border-radius: 8px;
+    box-shadow: 2px 2px 0;
+    font-style: monospace;
+    font-size: 1.1rem;
 }

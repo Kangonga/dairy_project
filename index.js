@@ -82,17 +82,17 @@ function newIncome(input = totalOutput){
         month = months[i];
         if (thirtyDays.includes(month)){
             profit = income*30;
-            month =  (`<li>Your income for ${months[i]} is ${profit}</li>`)
+            month =  (`<li>Your income for ${months[i]} is Ksh.${profit}</li>`)
         }
         
         else if (month == "February") {
             profit = income*29;
-            month = (`<li>Your income for ${months[i]} is ${profit}</li>`)
+            month = (`<li>Your income for ${months[i]} is Ksh.${profit}</li>`)
         }
  
         else{
             profit = income*31;
-            month =  (`<li>Your income for ${months[i]} is ${profit}</li>`)
+            month =  (`<li>Your income for ${months[i]} is Ksh.${profit}</li>`)
         }
         monthIncome.push(month)
     }
@@ -152,8 +152,9 @@ button3.addEventListener('click', () => {
 
 const button4 = document.getElementById('button4')
 button4.addEventListener('click', ()=>{
-    price2 = incomeOverTime(sellingPrice)
-    price1 = newIncome()
-    let opt = getElementByClassName('opt')
-    opt.innerHTML = `price1: ${price1} :: price2: ${price2}`
+    price1 = incomeOverTime(sellingPrice)
+    price2 = newIncome()
+    let opt = document.getElementById('optContent')
+    opt1.innerHTML = `<h2>Original price at ${sellingPrice}</h2> Ksh.${price1}`
+    opt2.innerHTML = `<h2>New price</h2> Ksh.${price2}`
 })
