@@ -79,3 +79,17 @@ button:hover {
     content: "";
     background-color: aqua;
 }
+
+.optional {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    height: 80vh;
+}
+.optionalChild{
+    width: 50%;
+    content: "";
+    background-color: rebeccapurple;
+}

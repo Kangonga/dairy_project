@@ -71,6 +71,35 @@ function incomeOverTime(sellingPrice, input = totalOutput){
 
 }
 
+function newIncome(input = totalOutput){
+    price2 = prompt("Enter the second value to compare against")
+    let price = price2;
+    let profit;
+    let income = price * input;
+    let month
+    let monthIncome = []
+    for (i=0; i<12; i++){
+        month = months[i];
+        if (thirtyDays.includes(month)){
+            profit = income*30;
+            month =  (`<li>Your income for ${months[i]} is ${profit}</li>`)
+        }
+        
+        else if (month == "February") {
+            profit = income*29;
+            month = (`<li>Your income for ${months[i]} is ${profit}</li>`)
+        }
+ 
+        else{
+            profit = income*31;
+            month =  (`<li>Your income for ${months[i]} is ${profit}</li>`)
+        }
+        monthIncome.push(month)
+    }
+    return monthIncome   
+
+}
+
 
 
 
@@ -120,3 +149,8 @@ button3.addEventListener('click', () => {
     button3.innerHTML =  `${monthly}`
 
 })
+
+function comparison(incomeOverTime, newIncome) {
+    income1 = incomeOverTime(price1)
+    income2 = incomeOverTime(price2)
+}
