@@ -63,6 +63,7 @@ function incomeOverTime(sellingPrice, input = totalOutput){
 
 }
 
+
 function newIncome(input = totalOutput){
     price2 = prompt("Enter the second value to compare against")
     let price = price2;
@@ -95,7 +96,7 @@ function newIncome(input = totalOutput){
 
 
 
-//create a report variable that listens to the daily output button
+
 const report = document.querySelector('.contents')
 
 report.addEventListener('click', ()=>{
