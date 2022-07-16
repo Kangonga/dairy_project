@@ -30,8 +30,6 @@ totalProduction = function(sheds, shedOutput) {
     output.push(`<li>The total output is ${totalOutput*7} litres for the week</li>`)
     dayOutput = totalOutput
     return(output)
-    //console.log(`The total income for the day is ${totalOutput*milkPrice}`)
-    //return totalOutput
 }
 
 
