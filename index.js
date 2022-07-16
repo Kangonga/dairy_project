@@ -155,6 +155,6 @@ button4.addEventListener('click', ()=>{
     price1 = incomeOverTime(sellingPrice)
     price2 = newIncome()
     let opt = document.getElementById('optContent')
-    opt1.innerHTML = `<h2>Original price at ${sellingPrice}</h2> Ksh.${price1}`
-    opt2.innerHTML = `<h2>New price</h2> Ksh.${price2}`
+    opt1.innerHTML = `<h2>Original price at ${sellingPrice}</h2> ${price1}`
+    opt2.innerHTML = `<h2>New price</h2>${price2}`
 })
