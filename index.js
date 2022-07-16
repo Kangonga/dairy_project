@@ -21,9 +21,6 @@ const totalPrice = totalOutput * milkPrice;
 
 
 
-
-// ////////////////////////////////////////////////////////
-
 totalProduction = function(sheds, shedOutput) {
     output = [];
     for(i=0; i<sheds.length; i++) {
