@@ -152,6 +152,15 @@ button3.addEventListener('click', () => {
 
 const button4 = document.getElementById('button4')
 button4.addEventListener('click', ()=>{
+    if (sellingPrice){
+        monthly = incomeOverTime(sellingPrice)
+        price1 = incomeOverTime(sellingPrice)
+    }
+    else {
+        sellingPrice = prompt('Enter the rate of one liter')
+        monthly = incomeOverTime(sellingPrice)
+        price1 = incomeOverTime(sellingPrice)
+    }
     price1 = incomeOverTime(sellingPrice)
     price2 = newIncome()
     let opt = document.getElementById('optContent')
