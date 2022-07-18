@@ -1,6 +1,6 @@
-##Project name: Dairy Business
+#Project name: Dairy Business
 
-##Project Description:
+#Project Description:
 This is a a dairy store project.
 It utilizes the following technologies: HTML, CSS and JavaScript.
 The project calculates revenues for milk at a given rate 
