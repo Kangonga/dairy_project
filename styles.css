@@ -47,7 +47,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url('cow.jpg');
+    background: url('cow.jpg');
 } 
 
 .button-container {
@@ -59,6 +59,7 @@ html {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
+    box-shadow: 8px 8px 5px royalblue;
 }
 
 .button {
@@ -95,6 +96,7 @@ button:hover {
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
+    border: 2px solid rebeccapurple;
 }
 
 #button4 {
