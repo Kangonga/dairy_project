@@ -47,6 +47,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-image: url('cow.jpg');
 } 
 
 .button-container {
